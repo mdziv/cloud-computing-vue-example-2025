@@ -1,10 +1,17 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
 
 <template>
-  <RouterLink to="/">Home</RouterLink> ~ <RouterLink to="/about">About</RouterLink>
-  <router-view></router-view>
+  <UApp>
+    <div class="mt-4 text-center font-thin text-xl">
+      <RouterLink to="/">Home</RouterLink> ~ <RouterLink to="/about">About</RouterLink>
+    </div>
+    <router-view></router-view>
+  </UApp>
 </template>
 
+
+<!---
 <style>
   * {
     font-family: monospace;
@@ -13,3 +20,4 @@
     color: white;
   }
 </style>
+-->
