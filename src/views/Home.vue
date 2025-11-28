@@ -56,13 +56,13 @@
       accessorKey: 'createdAt',
       header: 'CREATED AT',
       cell: ({ row }) => {
-        return new Date(row.getValue('createdAt').toLocaleString('en-US', {
+        return new Date(row.getValue('createdAt')).toLocaleString('en-US', {
           day: 'numeric',
           month: 'short',
           hour: '2-digit',
           minute: '2-digit',
           hour12: false
-        }))
+        })
       }
     }
   ]
