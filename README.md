@@ -1,42 +1,28 @@
 # 2025-cloud-computing-vue-example
 
-This template should help get you started developing with Vue 3 in Vite.
+Show and browse all the players in one discord server. Frontend for the [spring-boot-cache project](https://github.com/pkresoja/cloud-spring-boot-example-2025).
 
-## Recommended IDE Setup
+## Libraries used
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- `NuxtUI` - Open-source UI library for Vue or Nuxt
+- `TypeScript` - Programming language that adds types to JavaScript
 
-## Recommended Browser Setup
+## `.env` Example
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+```sh
+VITE_APP_API_BASE=<URL of server running spring-boot-cache application>/api
+```
+or if [spring-boot-cache application](https://github.com/pkresoja/cloud-spring-boot-example-2025) is running and set up correctly:
 
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
+```sh
+VITE_APP_API_BASE=/api
+```
 
 ## Project Setup
 
 ```sh
 bun install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-bun dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
 bun run build
 ```
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
